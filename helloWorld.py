@@ -5,6 +5,8 @@ import time
 def main():
     character = string.ascii_letters + string.digits + string.punctuation + ' '
     word = ''
+    start = time.time()
+    print("Started")
 
     for char in "Hello World!":
         ran = random.choice(character)
@@ -20,6 +22,10 @@ def main():
             print(word)
             time.sleep(0.01)
         time.sleep(1)
+    
+    end = time.time()
+    print("Ended")
+    print("Total time: ", end - start)
 
 
 
