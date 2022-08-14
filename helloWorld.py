@@ -20,7 +20,7 @@ def main():
             print ("\033[A                             \033[A")
             word = word + ran
             print(word)
-            time.sleep(0.01)
+            time.sleep(0.05)
         time.sleep(1)
     
     end = time.time()
